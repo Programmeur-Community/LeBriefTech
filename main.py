@@ -1,16 +1,7 @@
 import time
-import locale
-from datetime import datetime, timezone
 from summary import generate_summary
 from feed import read_feed_rss
 from utils import send_message
-
-# On configure la langue en français pour la date
-locale.setlocale(locale.LC_TIME, "fr_FR.UTF-8")
-
-# Date actuelle
-now = datetime.now(timezone.utc)
-date_str = now.strftime("%d %B %Y")
 
 # Limite de caractères par message
 max_length = 1900

@@ -9,21 +9,10 @@ on:
 jobs:
   run-tech-watch:
     runs-on: ubuntu-latest
-    env:
-      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-      DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
 
     steps:
       - name: Récupérer le code source
         uses: actions/checkout@v4
-
-      - name: Vérifier la présence des secrets
-        run: |
-          python - <<'PY'
-          import os
-          print('GEMINI_API_KEY :', bool(os.getenv('GEMINI_API_KEY')))
-          print('DISCORD_WEBHOOK_URL :', bool(os.getenv('DISCORD_WEBHOOK_URL')))
-          PY
 
       - name: Configurer Python
         uses: actions/setup-python@v5
