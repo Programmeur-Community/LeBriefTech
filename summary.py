@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 # On charge les variables d'environnement
 load_dotenv()
 
-client = genai.Client(os.getenv("GEMINI_API_KEY"))
+client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
 
 def generate_summary(articles: list) -> str | None:
