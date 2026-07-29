@@ -15,7 +15,7 @@ def send_message(msg: str):
     return
   
   requests.post(
-    url=os.getenv("WEBHOOK_URL"),
+    url=os.getenv("DISCORD_WEBHOOK_URL"),
     headers={
       "Content-Type": "application/json"
     },
