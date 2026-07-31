@@ -41,9 +41,9 @@ cd LeBriefTech
 
 2. Créer un environnement virtuel :
 
-   ```bash
-   python -m venv venv
-   ```
+```bash
+python -m venv venv
+```
 
 3. Activer l'environnement virtuel :
    - Sous Windows (PowerShell) :
@@ -99,10 +99,10 @@ Le workflow est créé dans dossier `.github/workflows` et envoie automatiquemen
 
 Ce projet est volontairement simple et modulaire. Il peut être facilement amélioré pour :
 
-- ajouter d'autres sources d'actualités,
-- changer le format du résumé,
-- envoyer les messages à plusieurs canaux,
-- automatiser l'envoi à une heure précise chaque jour.
+- Ajouter d'autres sources d'actualités
+- Changer le format du résumé
+- Envoyer les messages à plusieurs canaux
+- Automatiser l'envoi à une heure précise chaque jour.
 
 ---
 
